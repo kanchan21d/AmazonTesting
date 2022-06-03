@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="classes" name="ChromeTest(failed)">
+    <parameter name="browserName" value="Chrome"/>
+    <classes>
+      <class name="InitialTest.VerificationHomeSecond">
+        <methods>
+          <include name="launchCrossBrowser1"/>
+          <include name="CloseBrowser"/>
+          <include name="createPOMClassObj1"/>
+          <include name="clearObj"/>
+          <include name="loginMethod"/>
+          <include name="menuClickMethod"/>
+          <include name="srearchDropdownList"/>
+          <include name="logoutMethod"/>
+        </methods>
+      </class> <!-- InitialTest.VerificationHomeSecond -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="2" parallel="classes" name="FirefoxTest(failed)">
+    <parameter name="browserName" value="Firefox"/>
+    <classes>
+      <class name="InitialTest.SampleTestClass">
+        <methods>
+          <include name="createPOMClassObj"/>
+          <include name="launchCrossBrowser"/>
+          <include name="CloseBrowser"/>
+          <include name="logoutToApplication"/>
+          <include name="clearObject"/>
+          <include name="loginToApplication"/>
+          <include name="searchByAllCategory"/>
+        </methods>
+      </class> <!-- InitialTest.SampleTestClass -->
+      <class name="InitialTest.VerificationHomeSecond">
+        <methods>
+          <include name="launchCrossBrowser1"/>
+          <include name="CloseBrowser"/>
+          <include name="createPOMClassObj1"/>
+          <include name="clearObj"/>
+          <include name="loginMethod"/>
+          <include name="menuClickMethod"/>
+          <include name="srearchDropdownList"/>
+          <include name="logoutMethod"/>
+        </methods>
+      </class> <!-- InitialTest.VerificationHomeSecond -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+  <test thread-count="2" parallel="classes" name="EdgeTest(failed)">
+    <parameter name="browserName" value="Edge"/>
+    <classes>
+      <class name="InitialTest.SampleTestClass">
+        <methods>
+          <include name="createPOMClassObj"/>
+          <include name="launchCrossBrowser"/>
+          <include name="CloseBrowser"/>
+          <include name="logoutToApplication"/>
+          <include name="clearObject"/>
+          <include name="search"/>
+          <include name="loginToApplication"/>
+        </methods>
+      </class> <!-- InitialTest.SampleTestClass -->
+      <class name="InitialTest.VerificationHomeSecond">
+        <methods>
+          <include name="launchCrossBrowser1"/>
+          <include name="CloseBrowser"/>
+          <include name="createPOMClassObj1"/>
+          <include name="clearObj"/>
+          <include name="loginMethod"/>
+          <include name="menuClickMethod"/>
+          <include name="srearchDropdownList"/>
+          <include name="logoutMethod"/>
+        </methods>
+      </class> <!-- InitialTest.VerificationHomeSecond -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
